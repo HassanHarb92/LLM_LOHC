@@ -1,0 +1,860 @@
+This is logged!
+🔹 API URL Loaded: https://apps-dev.inside.anl.gov/argoapi/api/v1/resource/chat/
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator RandomForestRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+📂 Loaded 18 initial SMILES from CSV.
+
+🔹 Iteration 1/10 - Current set size: 0.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 51.65 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1ccc2oc(C3CC3)ccn2c1
+❌ Invalid SMILES detected: Cc1ccc2oc(C3CC3)ccc2c1
+❌ Invalid SMILES detected: c1ccc2nc(C3CC3)cc(Cl)cc2c1
+❌ Invalid SMILES detected: c1ccc2ncc(C3CC3)cc2o1
+❌ Invalid SMILES detected: c1ccc2[nH]c(C3CC3)ccc2c1
+❌ Invalid SMILES detected: c1cc(C)ccc2nc(C3CC3)cc2c1
+❌ Invalid SMILES detected: c1cc2ccc(C3CC3)cc2c1C
+❌ Invalid SMILES detected: c1ccc2nc(C3CC3)cc2c1O
+❌ Invalid SMILES detected: c1ccc2oc(C3CC3)ccc2c1
+❌ Invalid SMILES detected: c1ccc2cc(C3CC3)ccc2o1
+❌ Invalid SMILES detected: Cc1cc2ccc(C3CCC3)cc2c1
+❌ Invalid SMILES detected: c1ccc2oc(C3CCC3)ccc2c1
+🔹 Filtering and evaluating new SMILES...
+❌ Cc1ccc2ncc(C3CC3)cc2c1C failed H₂ weight requirement.
+❌ c1cnc2cc(C3CCC3)ccc2n1 failed H₂ weight requirement.
+❌ c1ccc2nc(C3CCN3)ccc2c1 failed H₂ weight requirement.
+❌ Fc1cccc2nc(C3CC3)ccc12 failed H₂ weight requirement.
+❌ c1ccc2nc(C3CCC3)ccc2c1 failed H₂ weight requirement.
+❌ Clc1cccc2nc(C3CC3)ccc12 failed H₂ weight requirement.
+❌ c1ccc2ncc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ Clc1cc2ccccc2nc1C1CCC1 failed H₂ weight requirement.
+❌ Cc1cnc2ccc(C3CC3)cc2c1C failed H₂ weight requirement.
+❌ Cc1ccc2nc(C3CC3)c(F)cc2c1 failed H₂ weight requirement.
+❌ Cc1cc2ccccc2nc1C1CC1 failed H₂ weight requirement.
+✅ c1cc2cc(C3CC3)ccnc-2c1 passed all filters. ΔH: 64.79318514670001, MP: 11.117°C
+❌ Cc1cc2ncccc2nc1C1CC1 failed H₂ weight requirement.
+❌ Cc1ccc2nc(C3CC3)ccc2c1 failed H₂ weight requirement.
+❌ c1cnc2ccc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ c1ccc2oc(C3CC3)cc2c1 failed H₂ weight requirement.
+❌ c1ccc2nc(C3CO3)ccc2c1 failed melting point filter (MP = 88.051°C).
+❌ c1ccc2nc(C3CCCC3)ccc2c1 failed H₂ weight requirement.
+⏳ Filtering & evaluation time: 22.69 seconds.
+🔹 1 molecules passed filtering. 17 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 16, 'ΔH out of range': 0, 'High melting point': 1, 'Duplicate': 0}
+⏳ Iteration 1 completed in 74.39 seconds.
+
+🔹 Iteration 2/10 - Current set size: 1.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 88.48 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1ccc2nc(C3COC3)cc(C)c2o1
+❌ Invalid SMILES detected: Cc1cc2nccc(C3CCC3)c2c1
+❌ Invalid SMILES detected: c1cc2ncc(C3CCO3)cc2c1
+❌ Invalid SMILES detected: c1cc2cnc(C3CCC3)cc2n1
+❌ Invalid SMILES detected: c1cc2cc(C3CC3)ccnc2o1
+❌ Invalid SMILES detected: c1cc2ncc(C3COC3)c(C)c2c1
+❌ Invalid SMILES detected: c1ccc2c(C3CCC3)cc(C)ncc2c1
+❌ Invalid SMILES detected: Cc1cc2ncc(C3CCC3)c(C)c2c1
+❌ Invalid SMILES detected: c1cc2c(C3CCC3)cncc2c1O
+🔹 Filtering and evaluating new SMILES...
+❌ c1ccc(-c2ccnc3ccccc23)cc1 failed melting point filter (MP = 94.486°C).
+❌ Oc1nc2ccccc2cc1C1CC1 failed H₂ weight requirement.
+❌ Cc1cc(C2CC2)nc2cccnc12 failed H₂ weight requirement.
+❌ c1cnc2ncc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ c1cnc2cc(C3CCO3)ccc2n1 failed H₂ weight requirement.
+❌ Cc1ccc2nc(C3CC3)ccc2c1C failed H₂ weight requirement.
+❌ Cc1c(C2COC2)cnc2ccccc12 failed H₂ weight requirement.
+❌ Cc1cc(C2CCC2)nc2cccc-2n1 failed H₂ weight requirement.
+❌ C1=Nc2ccccc2OC(C2CC2)=C1 failed H₂ weight requirement.
+❌ C1=Nc2ccccc2OC(C2CCC2)=C1 failed H₂ weight requirement.
+❌ c1ccc2c(C3CCC3)ccnc2c1 failed H₂ weight requirement.
+❌ c1cc2cc(C3CC3)c[nH]c-2c1 failed H₂ weight requirement.
+❌ c1cnc2ccc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ c1cc2cc(C3CNC3)ccnc-2c1 failed H₂ weight requirement.
+❌ c1cnc2cc(C3CCC3)ncc2c1 failed H₂ weight requirement.
+❌ c1ccc2ncc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ c1cc2cc(C3CNC3)ccn2c1 failed H₂ weight requirement.
+❌ Oc1cccc2c(C3CCC3)ccnc12 failed H₂ weight requirement.
+❌ Cc1ccc2ncc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ Cc1cc2cc(C3CCC3)ccn2c1 failed H₂ weight requirement.
+❌ c1cc2ncc(C3CCC3)cc2o1 failed H₂ weight requirement.
+⏳ Filtering & evaluation time: 0.78 seconds.
+🔹 0 molecules passed filtering. 21 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 20, 'ΔH out of range': 0, 'High melting point': 1, 'Duplicate': 0}
+⏳ Iteration 2 completed in 89.30 seconds.
+❌ No unique valid SMILES generated. Consider adjusting parameters.
+✅ Final dataset contains 1 unique LOHC molecules.
+Execution time: 0:02:44
+✅ SMILES exported successfully to 'Argo_LOHC_generated_dry_run_withMP_more_attempts_second_try_expt.csv'
+This is logged!
+🔹 API URL Loaded: https://apps-dev.inside.anl.gov/argoapi/api/v1/resource/chat/
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator RandomForestRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+📂 Loaded 18 initial SMILES from CSV.
+
+🔹 Iteration 1/10 - Current set size: 0.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 49.31 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1csc2ccc(C3CCC3)cc2c1
+❌ Invalid SMILES detected: c1cc(C2CCC2)c2ccncc2o1
+❌ Invalid SMILES detected: c1ccc2oc(C3CC3)ccn2o1
+❌ Invalid SMILES detected: c1cnc2cc(C3CCC3)ccc2o1
+❌ Invalid SMILES detected: c1cc(C2CCC2)nc2ccccc2c1
+❌ Invalid SMILES detected: c1cc(C2CCC2)c2coccc2c1
+❌ Invalid SMILES detected: c1cc(C2CC2)c2cncs2c1
+❌ Invalid SMILES detected: c1coc2ccc(C3CC3)cc2c1
+❌ Invalid SMILES detected: c1ccc2c(c1)oc(C3CCC3)cc2
+❌ Invalid SMILES detected: c1cc(C2CCC2)c2cnccn2c1
+❌ Invalid SMILES detected: c1ccc2nc(C3CCC3)ccn2c1
+❌ Invalid SMILES detected: c1ccc2oc(C3CC3)ccc2c1
+❌ Invalid SMILES detected: c1cc2c(oc1)ccc(C3CC3)n2
+🔹 Filtering and evaluating new SMILES...
+❌ C1=COC2=CC(C3CCC3)=CC=NC2=C1 failed H₂ weight requirement.
+✅ CC(c1ccccc1)c1cccnc1 passed all filters. ΔH: 50.7572398295, MP: 21.27°C
+❌ c1cc2cc(C3CCC3)ccc2s1 failed H₂ weight requirement.
+✅ Cc1ccccc1-c1ccncc1C passed all filters. ΔH: 51.8515937383, MP: 18.006°C
+❌ c1cc2cc(C3CCC3)cnc2o1 failed H₂ weight requirement.
+❌ Cc1cc2cccc(C3CC3)c2c(C)n1 failed H₂ weight requirement.
+✅ c1cc2ccc(C3CC3)ncc-2c1 passed all filters. ΔH: 64.33648270405001, MP: 11.117°C
+❌ c1cc(C2CC2)c2ccoc2c1 failed H₂ weight requirement.
+❌ c1cnc2ccc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ c1cc2occ(C3CCC3)cc-2n1 failed H₂ weight requirement.
+✅ Cc1ccc(-c2cccnc2)c(C)c1 passed all filters. ΔH: 62.69825406300001, MP: 17.766°C
+✅ c1cnc2cc(C3CC3)ccc2c1 passed all filters. ΔH: 55.97164035930001, MP: 28.838°C
+❌ c1cc2nc(C3CCC3)ccc2o1 failed H₂ weight requirement.
+❌ Cc1ccc2nccc(C3CC3)c2c1 failed H₂ weight requirement.
+❌ Cc1ccc2cc(C3CC3)ncc2c1 failed H₂ weight requirement.
+❌ CC(C)c1cccc2ccncc12 failed melting point filter (MP = 57.421°C).
+❌ Cc1ccc(-c2cccnc2)cc1C failed RF ΔH prediction (got 73.11134238199996).
+⏳ Filtering & evaluation time: 52.40 seconds.
+🔹 5 molecules passed filtering. 12 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 10, 'ΔH out of range': 1, 'High melting point': 1, 'Duplicate': 0}
+⏳ Iteration 1 completed in 101.77 seconds.
+
+🔹 Iteration 2/10 - Current set size: 5.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 65.58 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1cc2sccc(C3CC3)cc2n1
+❌ Invalid SMILES detected: c1cnc2ccc(C3CC3)cc2s1
+❌ Invalid SMILES detected: c1ccc2n(c1)ccc(C3CCC3)n2
+❌ Invalid SMILES detected: c1cc2ncc(C3CC3)ccc2o1
+❌ Invalid SMILES detected: c1cnc2ccc(C3CC3)cc2o1
+❌ Invalid SMILES detected: Cc1cc2nccc(C3CC3)c2c1N
+❌ Invalid SMILES detected: c1ccc2ncc(C3CCC3)cc2o1
+❌ Invalid SMILES detected: Cc1ccc2cc(C3CNC3)ccc2s1
+❌ Invalid SMILES detected: c1cc2ccc(C3C(Cl)C3)cc2n1
+🔹 Filtering and evaluating new SMILES...
+❌ c1csc2nc(C3CC3)cc-2c1 failed H₂ weight requirement.
+❌ Cc1ccc(-c2ccccc2)nc1N failed melting point filter (MP = 119.642°C).
+✅ c1cc2cc(C3CC3)ccnc-2c1 passed all filters. ΔH: 64.79318514670001, MP: 11.117°C
+✅ c1cc2nccc3ccccc3c-2c1 passed all filters. ΔH: 54.704854989200015, MP: 6.052°C
+❌ c1cnc2ccc(C3CNC3)cc2c1 failed H₂ weight requirement.
+❌ c1nc2cc(C3CC3)ccc2s1 failed H₂ weight requirement.
+❌ Nc1cccc2cc(C3COC3)ccc12 failed H₂ weight requirement.
+❌ c1ccc2c(c1)ccn2C1CC1 failed H₂ weight requirement.
+❌ Cc1cc2ccc(C3CC3)ncc-2c1 failed H₂ weight requirement.
+❌ Cc1ccc(-c2ccncc2)nc1C failed RF ΔH prediction (got 79.22370329439995).
+❌ Cc1cnc2cc3ccccc3cc2c1 failed melting point filter (MP = 93.31°C).
+❌ c1cnc2ccc(C3OCO3)cc2c1 failed H₂ weight requirement.
+❌ c1ccc2ncc(C3CC3)cc2c1 is in the initial dataset, skipping.
+❌ CC1CC1c1ccnc2cccc-2c1 failed H₂ weight requirement.
+❌ c1ccc2nc(C3CC3)ccc2c1 is in the initial dataset, skipping.
+❌ c1ccc2cc(C3CCC3)ncc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2nccc(C3CCC3)c2c1 failed H₂ weight requirement.
+❌ c1cncc2cc(C3COC3)cc-2c1 failed H₂ weight requirement.
+❌ Cc1cnc2ccc(C3CC3)cc2c1C failed H₂ weight requirement.
+⏳ Filtering & evaluation time: 55.31 seconds.
+🔹 2 molecules passed filtering. 17 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 12, 'ΔH out of range': 1, 'High melting point': 2, 'Duplicate': 2}
+⏳ Iteration 2 completed in 120.95 seconds.
+
+🔹 Iteration 3/10 - Current set size: 7.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 67.47 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1cc2ccc(C4CCCC4)cc2n1
+❌ Invalid SMILES detected: c1ccc2ccc(C3CCC3)ncc2c1C
+❌ Invalid SMILES detected: c1cc2ncccc2c1C3CCC3
+❌ Invalid SMILES detected: c1ccc2nccc3c(c2c1)C3CC3
+❌ Invalid SMILES detected: c1cc2ccc(C3CCC3)cc2n1
+❌ Invalid SMILES detected: Cc1ccc(-c2ccccn2)C(C)c1
+❌ Invalid SMILES detected: Cc1ccc(-c2cnccc2)C(C)c1
+❌ Invalid SMILES detected: c1ccc2ncc(C3CC3)ccc2c1C
+❌ Invalid SMILES detected: Cc1ccc(-c2ncccc2)C(C)c1
+❌ Invalid SMILES detected: Cc1cc2ccc(C3CC3)nc2c1
+🔹 Filtering and evaluating new SMILES...
+✅ CC(c1ccccc1)c1cccnc1 passed all filters. ΔH: 50.7572398295, MP: 21.27°C
+❌ c1cnc2nccc(C3CCC3)c2c1 failed H₂ weight requirement.
+❌ c1cnc2ccc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ c1ccc2c(C3CCC3)ccnc2c1 failed H₂ weight requirement.
+✅ CC(c1ccccc1)c1ccccn1 passed all filters. ΔH: 49.55978734910004, MP: 21.218°C
+✅ CC(c1ccccc1)c1ccncc1 passed all filters. ΔH: 48.193935737400025, MP: 21.297°C
+✅ Cc1cc(-c2ccccc2C)ccn1 passed all filters. ΔH: 62.38410044410001, MP: 18.166°C
+❌ Cc1ccccc1C(C)c1ccccn1 failed melting point filter (MP = 42.442°C).
+❌ c1cc2ccc(C3CC3)cc2cn1 is in the initial dataset, skipping.
+❌ c1cnc2ccc(C3CCCC3)cc2c1 failed H₂ weight requirement.
+❌ Cc1ccccc1C(C)c1cccnc1 failed melting point filter (MP = 42.448°C).
+❌ c1cnc2c(C3CCC3)cccc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2ccc(C3CC3)ccc1-2 failed H₂ weight requirement.
+❌ CC1=CC2=NC=CC2=C1C1CCC1 failed H₂ weight requirement.
+❌ c1ccc2ncc(C3CC3)cc2c1 is in the initial dataset, skipping.
+✅ c1cc2nccc3ccc(C4CC4)cc3c-2c1 passed all filters. ΔH: 60.3712904789, MP: 12.578°C
+❌ Cc1ccc(-c2cccnc2)nc1C failed RF ΔH prediction (got 72.25568755609996).
+❌ Cc1cccc2cc(C3CC3)ncc12 failed H₂ weight requirement.
+❌ Cc1ccc2ccc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ Cc1cnc2ccc(C3CC3)cc2c1C failed H₂ weight requirement.
+⏳ Filtering & evaluation time: 82.38 seconds.
+🔹 5 molecules passed filtering. 15 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 10, 'ΔH out of range': 1, 'High melting point': 2, 'Duplicate': 2}
+⏳ Iteration 3 completed in 149.89 seconds.
+
+🔹 Iteration 4/10 - Current set size: 11.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 64.65 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1ccc2cc(C3CC3)nc(C)n2c1
+❌ Invalid SMILES detected: c1ccc2ncc(C3CC3)ccc2n1
+❌ Invalid SMILES detected: c1ccc2nccc3c(C4CC4)ccnc3c2c1
+❌ Invalid SMILES detected: Cc1cc(C)c2nccc3ccc(C3CC3)cc3c2c1
+❌ Invalid SMILES detected: Cc1cccc2ccc(C3CC3)nc2c1
+❌ Invalid SMILES detected: c1cncc2ccc(C3CCC3)cc2c1
+❌ Invalid SMILES detected: Cc1cc2ccc3nnccc3c2c1
+🔹 Filtering and evaluating new SMILES...
+❌ c1cc(C2CC2)c2cnccc2c1 is in the initial dataset, skipping.
+❌ Cc1ccc2ncc(C3CC3)cc2c1 failed H₂ weight requirement.
+❌ CC1=CNc2ccc(C3CC3)cc2C1 failed H₂ weight requirement.
+✅ CC(c1ccccc1)c1ccccn1 passed all filters. ΔH: 49.55978734910004, MP: 21.218°C
+❌ Cc1ccc2ccc(C3CC3)nc2c1 failed H₂ weight requirement.
+❌ Fc1ccc2ccc(C3CC3)cnc1-2 failed H₂ weight requirement.
+✅ CC(c1ccccc1)c1ccncc1 passed all filters. ΔH: 48.193935737400025, MP: 21.297°C
+❌ CC(c1ccncc1)c1ccccn1 failed melting point filter (MP = 102.757°C).
+❌ c1cc(C2CC2)c2ccncc2c1 is in the initial dataset, skipping.
+❌ Cc1ccc2ncc(C3CC3)ccc1-2 failed H₂ weight requirement.
+❌ CC1CC1c1ccncc1 failed H₂ weight requirement.
+✅ CC1=CC=CC2=NC=Cc3ccccc3C2=C1 passed all filters. ΔH: 56.28388451119999, MP: 11.082°C
+❌ CC(c1ccccc1)c1ccnnc1 failed melting point filter (MP = 100.508°C).
+✅ Cc1ccc(-c2ccnc(C)c2)cc1 passed all filters. ΔH: 61.59570786560002, MP: 18.157°C
+✅ c1ccc2c(C3CC3)cncc2c1 passed all filters. ΔH: 55.936903463549996, MP: 28.808°C
+❌ CC(c1ccncc1)c1ccncc1 failed melting point filter (MP = 102.515°C).
+❌ N#Cc1ccccc1-c1ccncc1 failed melting point filter (MP = 118.266°C).
+❌ c1cc2ccn(C3CC3)cc-2c1 failed H₂ weight requirement.
+❌ Cc1ccc2cnc(C3CC3)cc2c1 failed H₂ weight requirement.
+❌ Cc1cc2cnccc2c(C)n1 failed melting point filter (MP = 98.665°C).
+❌ Cc1c(C2CC2)ccc2ncccc12 failed H₂ weight requirement.
+❌ Cc1cnc2ccc(C3CC3)cc2c1C failed H₂ weight requirement.
+❌ c1cc2ccc(C3CCC3)cc2cn1 failed H₂ weight requirement.
+⏳ Filtering & evaluation time: 114.37 seconds.
+🔹 5 molecules passed filtering. 18 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 11, 'ΔH out of range': 0, 'High melting point': 5, 'Duplicate': 2}
+⏳ Iteration 4 completed in 179.08 seconds.
+
+🔹 Iteration 5/10 - Current set size: 14.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 39.58 seconds.
+✅ Received 30 SMILES from LLM. 29 were unique.
+❌ Invalid SMILES detected: c1cc2ccc(C3CCC3)cc2c1N
+❌ Invalid SMILES detected: Cc1ccc2cc(C3CC3)ccc2n1C
+❌ Invalid SMILES detected: c1ccc2c(c1)ccn(C3CC3)c2
+❌ Invalid SMILES detected: c1cc2nc(C1NC1)ccc2c1
+❌ Invalid SMILES detected: c1ccc2c(c1)ccn(C(C)C)c2
+❌ Invalid SMILES detected: c1cc2ccc(C(F)(F)F)cc2n1
+🔹 Filtering and evaluating new SMILES...
+❌ c1cc2nccc3ccc(C4COC4)cc3c-2c1 failed melting point filter (MP = 65.184°C).
+❌ c1cc(C2CCC2)c2ccncc2c1 failed H₂ weight requirement.
+❌ c1cc2cc(C3CC3)ccc2o1 failed H₂ weight requirement.
+❌ C1=CC2CNCOc3cc2ccc31 failed H₂ weight requirement.
+❌ c1ccc2c(c1)ccn2C1CC1 failed H₂ weight requirement.
+✅ Cc1ccccc1-c1cccnc1C passed all filters. ΔH: 53.33934775340003, MP: 18.105°C
+❌ c1cc2ccc(C3CC3)cc2o1 failed H₂ weight requirement.
+❌ c1cc2nc(C3CC3)ccc2o1 failed H₂ weight requirement.
+❌ Oc1ccc2c(C3CC3)ccnc2c1 failed H₂ weight requirement.
+❌ c1ccc2nc(C3CO3)ccc2c1 failed melting point filter (MP = 88.051°C).
+❌ Cc1ccc2cc(C3CC3)ncc2c1 failed H₂ weight requirement.
+❌ C1=CC2COCC=c3ccc2nc3=C1 failed H₂ weight requirement.
+❌ Cc1ncccc1C(C)c1ccccc1 failed melting point filter (MP = 42.465°C).
+❌ c1ccc2nc(C3CC3)ccc2c1 is in the initial dataset, skipping.
+✅ c1cc2nccc3ccc(C4CC4)cc3c-2c1 passed all filters. ΔH: 60.3712904789, MP: 12.578°C
+✅ Cc1ccccc1-c1cccnc1 passed all filters. ΔH: 62.70446074500003, MP: 37.691°C
+✅ C1=CC2OCC=c3cc2cnc3=C1 passed all filters. ΔH: 60.970210568816675, MP: 38.756°C
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for c1cc2nccc3ccc(C4CCC4)cc3c-2c1: 
+❌ c1cc2nccc3ccc(C4CCC4)cc3c-2c1 failed melting point filter (MP = 9999°C).
+❌ Cc1cnc2ccc(C3CC3)cc2c1 failed H₂ weight requirement.
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for Cc1cc(-c2ccccc2C(=O)O)ccc1N: 
+❌ Cc1cc(-c2ccccc2C(=O)O)ccc1N failed melting point filter (MP = 9999°C).
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for Cc1ccc(-c2ccnc3ccccc23)cc1: 
+❌ Cc1ccc(-c2ccnc3ccccc23)cc1 failed melting point filter (MP = 9999°C).
+❌ Cc1ccc(-c2ccn(C)c2)c(C)c1 failed H₂ weight requirement.
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for Cc1cc(-c2ccccn2)ccn1: 
+❌ Cc1cc(-c2ccccn2)ccn1 failed melting point filter (MP = 9999°C).
+⏳ Filtering & evaluation time: 41.52 seconds.
+🔹 4 molecules passed filtering. 19 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 11, 'ΔH out of range': 0, 'High melting point': 7, 'Duplicate': 1}
+⏳ Iteration 5 completed in 81.13 seconds.
+
+🔹 Iteration 6/10 - Current set size: 17.
+🔹 Attempt 1/10 to generate new SMILES...
+Traceback (most recent call last):
+  File "/Users/hharb/Desktop/Projects/Argo_Testing/LOHC_discovery/o3-test/DD_7/LLM_LOHC_gpto3.py", line 651, in <module>
+    final_lohc_set = iterative_generation(initial_smiles)
+  File "/Users/hharb/Desktop/Projects/Argo_Testing/LOHC_discovery/o3-test/DD_7/LLM_LOHC_gpto3.py", line 614, in iterative_generation
+    new_smiles = generate_new_smiles(list(iterative_set) + list(initial_smiles_set))
+  File "/Users/hharb/Desktop/Projects/Argo_Testing/LOHC_discovery/o3-test/DD_7/LLM_LOHC_gpto3.py", line 292, in generate_new_smiles
+    response = requests.post(API_URL, headers=HEADERS, json=payload)
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/hharb/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/hharb/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/hharb/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/hharb/miniconda3/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/hharb/miniconda3/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/hharb/miniconda3/lib/python3.10/ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/hharb/miniconda3/lib/python3.10/ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+This is logged!
+🔹 API URL Loaded: https://apps-dev.inside.anl.gov/argoapi/api/v1/resource/chat/
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator RandomForestRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+📂 Loaded 18 initial SMILES from CSV.
+
+🔹 Iteration 1/10 - Current set size: 0.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 50.01 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1ccc2c(ccn2)C3CC3c1
+❌ Invalid SMILES detected: Cc1cc2nc(C3CC3)ccc2c1C
+❌ Invalid SMILES detected: c1ccc2ncc(C4CC4)c2c1
+❌ Invalid SMILES detected: c1cccc2c1ccn3c2cccc3
+❌ Invalid SMILES detected: c1ccc2nc(C3CC3)cc2c1
+❌ Invalid SMILES detected: c1ccc2cc(C3CCC3)nc2c1
+❌ Invalid SMILES detected: c1cc2nc(C4CC4)ccc2c1
+❌ Invalid SMILES detected: c1ccc2c(C4CC4)cccn2c1
+❌ Invalid SMILES detected: c1cc2ccc(C3CC3)nc2c1
+❌ Invalid SMILES detected: c1ccc2c(C3CC3)cccn2c1
+❌ Invalid SMILES detected: c1cnc2c(C4CC4)ccccc2c1
+❌ Invalid SMILES detected: c1c[nH]c2cc(C3CC3)ccc2c1
+❌ Invalid SMILES detected: c1cc2nc(C3CC3)ccc2c1
+❌ Invalid SMILES detected: c1cc2nc(C3CC3)cc(C)c2c1
+❌ Invalid SMILES detected: c1ccnc2c(C3CC3)cccc2c1
+🔹 Filtering and evaluating new SMILES...
+✅ c1ccc2c(C3CC3)cncc2c1 passed all filters. ΔH: 55.936903463549996, MP: 28.808°C
+❌ Cc1cnc2cc(C3CC3)ccc2c1 failed H₂ weight requirement.
+✅ C1=CC=C2C3=CC=C4C=C(N=C2C=C1)C4CC3 passed all filters. ΔH: 57.864994305666684, MP: 27.52°C
+❌ C1=CC2=CC(C3CC3)=NC2=C1 failed H₂ weight requirement.
+❌ c1ccc2nc(C3CC3)ccc2c1 is in the initial dataset, skipping.
+✅ c1cnc2c(C3CC3)cccc2c1 passed all filters. ΔH: 56.9262288388, MP: 28.849°C
+❌ Cc1ccc(-c2ccccn2)nc1C failed RF ΔH prediction (got 78.6689789023).
+❌ c1ccc2c(c1)ccn1c(C3CC3)ccc21 failed melting point filter (MP = 100.142°C).
+❌ C1=CC2=NC(C3CC3)=CC2=C1 failed H₂ weight requirement.
+❌ c1ccc2ncc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ Cc1cc2cccnc2cc1C1CCC1 failed H₂ weight requirement.
+❌ Cc1ccc2ccc(C3CC3)nc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2ncc(C3CC3)cc2c1 failed H₂ weight requirement.
+❌ c1cnc2ccc(C3CC3)cc2c1 is in the initial dataset, skipping.
+✅ Cc1ccccc1-c1ccncc1C passed all filters. ΔH: 51.8515937383, MP: 18.006°C
+⏳ Filtering & evaluation time: 35.48 seconds.
+🔹 4 molecules passed filtering. 11 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 7, 'ΔH out of range': 1, 'High melting point': 1, 'Duplicate': 2}
+⏳ Iteration 1 completed in 85.54 seconds.
+
+🔹 Iteration 2/10 - Current set size: 4.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 52.79 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Fc1cccc2c(C3CC3)cccc2c1
+❌ Invalid SMILES detected: c1ccc2c(C3CC3)ccc(S)nc2c1
+❌ Invalid SMILES detected: c1ccc2c(C3CC3)ccc(O)nc2c1
+❌ Invalid SMILES detected: c1ccc2c(C3CC3)ccc(F)nc2c1
+❌ Invalid SMILES detected: Fc1cccc2c(C3CCC3)cccc2c1
+❌ Invalid SMILES detected: c1ccc2c(C3CC3)ccc(N)nc2c1
+🔹 Filtering and evaluating new SMILES...
+❌ Brc1cccc2c(C3CCC3)cccc12 failed H₂ weight requirement.
+❌ Brc1cccc2c(C3CC3)cccc12 failed H₂ weight requirement.
+❌ c1cc2ccc(C3CCC3)cc2cn1 failed H₂ weight requirement.
+❌ Clc1cccc2c(C3CC3)cccc12 failed H₂ weight requirement.
+❌ c1ccc2c(C3CCCC3)cccc2c1 failed H₂ weight requirement.
+❌ c1cc2ccc(C3CCCC3)cc2cn1 failed H₂ weight requirement.
+❌ Cc1ccc2c(C3CC3)cccc2c1 failed H₂ weight requirement.
+❌ c1ccc2cc(C3CCC3)ncc2c1 failed H₂ weight requirement.
+❌ c1cnc2c(C3CCCC3)cccc2c1 failed H₂ weight requirement.
+❌ c1ccc2c(C3CCCC3)ccnc2c1 failed H₂ weight requirement.
+❌ c1cc2cc(C3CCC3)ccc2cn1 failed H₂ weight requirement.
+❌ c1cnc2c(C3CCC3)cccc2c1 failed H₂ weight requirement.
+❌ Clc1cccc2c(C3CCC3)cccc12 failed H₂ weight requirement.
+❌ Cc1ccc2c(C3CCCC3)cccc2c1 failed H₂ weight requirement.
+❌ c1ccc2c(C3CCC3)ccnc2c1 failed H₂ weight requirement.
+❌ c1ccc2cc(C3CCCC3)ncc2c1 failed H₂ weight requirement.
+❌ Clc1cccc2c(C3CCCC3)cccc12 failed H₂ weight requirement.
+❌ c1ccc2ncc(C3CCCC3)cc2c1 failed H₂ weight requirement.
+❌ Brc1cccc2c(C3CCCC3)cccc12 failed H₂ weight requirement.
+❌ c1ccc2c(C3CCC3)cccc2c1 failed H₂ weight requirement.
+❌ c1ccc2ncc(C3CCC3)cc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2c(C3CCC3)cccc2c1 failed H₂ weight requirement.
+❌ c1cnc2ccc(C3CCCC3)cc2c1 failed H₂ weight requirement.
+❌ c1cnc2ccc(C3CCC3)cc2c1 failed H₂ weight requirement.
+⏳ Filtering & evaluation time: 0.01 seconds.
+🔹 0 molecules passed filtering. 24 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 24, 'ΔH out of range': 0, 'High melting point': 0, 'Duplicate': 0}
+⏳ Iteration 2 completed in 52.85 seconds.
+❌ No unique valid SMILES generated. Consider adjusting parameters.
+✅ Final dataset contains 4 unique LOHC molecules.
+Execution time: 0:02:19
+✅ SMILES exported successfully to 'Argo_LOHC_generated_dry_run_withMP_more_attempts_second_try_expt.csv'
+This is logged!
+🔹 API URL Loaded: https://apps-dev.inside.anl.gov/argoapi/api/v1/resource/chat/
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/hharb/miniconda3/lib/python3.10/site-packages/sklearn/base.py:442: InconsistentVersionWarning: Trying to unpickle estimator RandomForestRegressor from version 1.6.1 when using version 1.7.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+📂 Loaded 7 initial SMILES from CSV.
+
+🔹 Iteration 1/10 - Current set size: 0.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 72.79 seconds.
+✅ Received 30 SMILES from LLM. 29 were unique.
+❌ Invalid SMILES detected: c1ccc2nocnc2c1
+❌ Invalid SMILES detected: Cc1c[nH]c2ccccc2c1
+❌ Invalid SMILES detected: Cc1ccc(cc1)Cc2cc[nH]cc2
+❌ Invalid SMILES detected: Cc1cc2ncccc2c1
+❌ Invalid SMILES detected: Cc1ccc(cc1)Cc2ccnc2
+❌ Invalid SMILES detected: n1c2ccccc2c3ccccc13
+❌ Invalid SMILES detected: Cc1ccccn1Cc2ccccc2
+❌ Invalid SMILES detected: Cc1ccc2occc(C)c2c1
+❌ Invalid SMILES detected: c1ccc2oc(C)ccc2c1
+❌ Invalid SMILES detected: Cc1ccc2nc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccccn1COc2ccccc2
+❌ Invalid SMILES detected: Oc1c2ccccc2c3ccccc13
+❌ Invalid SMILES detected: c1ccc2c(c1)nc[nH]c2
+❌ Invalid SMILES detected: c1ccc2noccc2c1
+🔹 Filtering and evaluating new SMILES...
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for Cc1ccccc1COc1ccccn1: 
+❌ Cc1ccccc1COc1ccccn1 failed melting point filter (MP = 9999°C).
+✅ Cc1ccc2ocnc2c1 passed all filters. ΔH: 44.09826994500004, MP: 13.684°C
+❌ Cc1ccncc1COc1ccccc1 failed melting point filter (MP = 63.477°C).
+✅ c1ccc2ncccc2c1 passed all filters. ΔH: 46.32753780020002, MP: -12.609°C
+✅ C1=CC2=Nc3ccccc3C2=C1 passed all filters. ΔH: 52.03345468480002, MP: 5.87°C
+❌ Cc1ccccc1Cc1cc[nH]c1 failed melting point filter (MP = 83.923°C).
+❌ c1ccc(COc2ccncc2)cc1 failed melting point filter (MP = 62.24°C).
+✅ Cc1ccc2ccccc2n1 passed all filters. ΔH: 48.33575299530003, MP: 1.325°C
+✅ c1ccc2ocnc2c1 passed all filters. ΔH: 45.91025001580006, MP: 30.883°C
+❌ Cc1ccc2nccnc2c1 failed melting point filter (MP = 214.505°C).
+❌ Cc1ccccc1COc1ccncc1 failed melting point filter (MP = 63.468°C).
+✅ Cc1ccccc1Cc1ccoc1 passed all filters. ΔH: 67.09334500159994, MP: -11.27°C
+✅ Cc1ccc(Cc2ccoc2)cc1 passed all filters. ΔH: 66.9816177249, MP: -11.27°C
+❌ Cc1ccccc1COc1cccnc1 failed melting point filter (MP = 63.476°C).
+⏳ Filtering & evaluation time: 160.12 seconds.
+🔹 7 molecules passed filtering. 7 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 0, 'ΔH out of range': 0, 'High melting point': 7, 'Duplicate': 0}
+⏳ Iteration 1 completed in 232.96 seconds.
+
+🔹 Iteration 2/10 - Current set size: 7.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 58.83 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: c1ccc2[nH]c[nH]c2c1
+❌ Invalid SMILES detected: c1ccc2oc3ccccc3nc2c1
+❌ Invalid SMILES detected: c1ccc2noncc2c1
+❌ Invalid SMILES detected: Cc1ccc2ocncc2c1
+❌ Invalid SMILES detected: c1ccc2nc3ccoc3c2c1
+❌ Invalid SMILES detected: c1ccc2occcn2c1
+❌ Invalid SMILES detected: c1ccc2ncn3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nocnc2c1
+❌ Invalid SMILES detected: Cc1ccc2nccoc2c1
+❌ Invalid SMILES detected: Cc1ccc2noc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1cc2nocc2c1
+❌ Invalid SMILES detected: Cc1ccc2ncnc2c1
+❌ Invalid SMILES detected: c1ccc2ncocn2c1
+❌ Invalid SMILES detected: c1ccc2ocn3ccccc3c2c1
+❌ Invalid SMILES detected: c1ccc2noc3ccccc3c2c1
+🔹 Filtering and evaluating new SMILES...
+❌ C1=NOc2ccccc2O1 failed melting point filter (MP = 123.981°C).
+✅ Cc1ccc2ncoc2c1 passed all filters. ΔH: 43.76301984990004, MP: 13.693°C
+❌ c1ccc2[nH]cnc2c1 failed RF ΔH prediction (got 39.27075653099997).
+❌ c1ccc2c(c1)nnc1ccccc12 failed melting point filter (MP = 178.099°C).
+✅ Cc1ccccc1Cc1cccnc1 passed all filters. ΔH: 52.19931889670001, MP: 19.583°C
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for c1ccc2ncncc2c1: 
+❌ c1ccc2ncncc2c1 failed melting point filter (MP = 9999°C).
+❌ Cc1ccc2n[nH]cc2c1 failed melting point filter (MP = 148.396°C).
+❌ Cc1ccc2ncsc2c1 failed H₂ weight requirement.
+❌ c1ccc2c(c1)nc1ccccn12 failed melting point filter (MP = 100.328°C).
+❌ Nc1cc2ccccc2o1 failed melting point filter (MP = 138.021°C).
+❌ c1ccc2nc(C3CC3)ccc2c1 is in the initial dataset, skipping.
+❌ c1ccc2c(c1)oc1ccncc12 failed melting point filter (MP = 66.029°C).
+❌ c1ccc2nsnc2c1 failed melting point filter (MP = 42.996°C).
+✅ c1ccc2scnc2c1 passed all filters. ΔH: 47.45679029230002, MP: 2.214°C
+❌ Cc1cc2nc3ccccc3oc-2c1 failed melting point filter (MP = 66.349°C).
+⏳ Filtering & evaluation time: 150.86 seconds.
+🔹 3 molecules passed filtering. 12 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 1, 'ΔH out of range': 1, 'High melting point': 9, 'Duplicate': 1}
+⏳ Iteration 2 completed in 209.75 seconds.
+
+🔹 Iteration 3/10 - Current set size: 10.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 73.16 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1ccc2nc3ccc(C(F)(F)F)cc3c2c1
+❌ Invalid SMILES detected: c1ccc2ncc3ccccn3c2c1
+❌ Invalid SMILES detected: c1ccc2nocnc2c1
+❌ Invalid SMILES detected: Cc1ccc2nc3ccc(C)cc3c2c1C
+❌ Invalid SMILES detected: Cc1ccc2nc3ccc(C)cc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nc(S)cc2c1
+❌ Invalid SMILES detected: Cc1ccc2nc(OC)cc2c1
+❌ Invalid SMILES detected: CCc1ccc2nc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nc3ccccc3c2c1C
+❌ Invalid SMILES detected: Cc1ccc2nc3ccccc3c2c1O
+❌ Invalid SMILES detected: Cc1ccc2ncnc2c1C
+❌ Invalid SMILES detected: Cc1ccc2cc3c(cccc3n2)C
+❌ Invalid SMILES detected: Cc1ccc2nc3ccc(Cl)cc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nc(C)cc3ccccc3c2c1
+❌ Invalid SMILES detected: c1ccc2oc3ccccc3n2c1
+🔹 Filtering and evaluating new SMILES...
+❌ Cc1ccccc1Cc1ccncc1C failed melting point filter (MP = 41.624°C).
+❌ Cc1ccccc1Cc1cnccc1C failed melting point filter (MP = 41.605°C).
+❌ CCc1ccc2ccccc2n1 failed melting point filter (MP = 44.054°C).
+✅ Cc1ccccc1CCc1cccnc1 passed all filters. ΔH: 50.8263092957, MP: 21.626°C
+❌ Cc1cnc2ncccc2c1 failed melting point filter (MP = 114.635°C).
+❌ Cc1ccc2nc3ccccc3n2c1 failed melting point filter (MP = 98.122°C).
+❌ CCc1ccc2ncoc2c1 failed H₂ weight requirement.
+❌ Cc1cc2ccccc2n1C failed H₂ weight requirement.
+❌ Cc1ccc2ncc(C)nc2c1 failed melting point filter (MP = 124.086°C).
+❌ Cc1ccc2oc(C)nc2c1 failed H₂ weight requirement.
+❌ Cc1ccccc1Sc1cccnc1 failed melting point filter (MP = 68.341°C).
+❌ Cc1ccc2nc3ccccc3c(Br)c2c1 failed H₂ weight requirement.
+❌ Cc1ccc2nc(C)oc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2scnc2c1C failed H₂ weight requirement.
+❌ Cc1ccccc1Oc1cccnc1 failed melting point filter (MP = 60.814°C).
+⏳ Filtering & evaluation time: 87.06 seconds.
+🔹 1 molecules passed filtering. 14 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 6, 'ΔH out of range': 0, 'High melting point': 8, 'Duplicate': 0}
+⏳ Iteration 3 completed in 160.27 seconds.
+
+🔹 Iteration 4/10 - Current set size: 11.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 78.65 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1cccc2nccnc2c1
+❌ Invalid SMILES detected: Cc1ccc2nc(C3CC3)cc2c1
+❌ Invalid SMILES detected: c1ccc2nc3ccccc3c2c1C
+❌ Invalid SMILES detected: Cc1ccc2nc(N)cc2c1
+❌ Invalid SMILES detected: Cc1ccccc1Cc1cccncc1
+❌ Invalid SMILES detected: Cc1ccc2occc(C)c2c1
+❌ Invalid SMILES detected: Cc1cc2nc3ccccc3cc2c1
+❌ Invalid SMILES detected: Cc1cc2nc3ccncc3cc2c1
+❌ Invalid SMILES detected: CCc1cc2ncccc2c1C
+❌ Invalid SMILES detected: Cc1ccc2nc(=O)ccc2c1
+🔹 Filtering and evaluating new SMILES...
+❌ CCc1ccc2ncccc2c1 failed melting point filter (MP = 44.132°C).
+❌ Cc1cc2cc3ccccc3sc-2c1 failed melting point filter (MP = 48.754°C).
+❌ Cc1cc2cc3ccccc3oc-2c1 failed melting point filter (MP = 52.869°C).
+❌ CCc1ccc2ocnc2c1C failed H₂ weight requirement.
+✅ Cc1cc2nccc3ccccc3c-2c1C passed all filters. ΔH: 53.86886953410003, MP: 19.415°C
+✅ Cc1ccc2nccc(C)c2c1 passed all filters. ΔH: 48.973188512400014, MP: 27.814°C
+❌ Cc1ccc2scnc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2ccoc2c1C failed H₂ weight requirement.
+✅ Cc1ccncc1CCc1ccccc1 passed all filters. ΔH: 51.022889232800004, MP: 21.625°C
+❌ Cc1cc(C)c2cnccc2c1 failed melting point filter (MP = 57.792°C).
+❌ Cc1ccccc1Cc1ccoc1C failed H₂ weight requirement.
+❌ Cc1cc(C)c2cccnc2c1 failed melting point filter (MP = 43.481°C).
+❌ Cc1cc(C)c2occc2c1 failed H₂ weight requirement.
+❌ Cc1cc(C)c2sccc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2ncc3ccccc3c2c1C failed RF ΔH prediction (got 79.08550134979998).
+❌ Cc1ccccc1CCc1cccnc1C failed H₂ weight requirement.
+❌ Cc1ccc2ncsc2c1 failed H₂ weight requirement.
+❌ Cc1ccc2ncccc2c1C(C)C failed H₂ weight requirement.
+❌ Cc1ccc2ccsc2c1 failed H₂ weight requirement.
+✅ Cc1ccc2nocc2c1 passed all filters. ΔH: 51.61430192360002, MP: 29.046°C
+⏳ Filtering & evaluation time: 97.11 seconds.
+🔹 4 molecules passed filtering. 16 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 10, 'ΔH out of range': 1, 'High melting point': 5, 'Duplicate': 0}
+⏳ Iteration 4 completed in 175.79 seconds.
+
+🔹 Iteration 5/10 - Current set size: 15.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 51.54 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1ccc2scc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1cccc2nccn3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2ccccn2c1
+❌ Invalid SMILES detected: Cc1ccc2ncnc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1nccn2ccccc12
+❌ Invalid SMILES detected: Cc1cccc2nccc3ccccc3c12
+❌ Invalid SMILES detected: Cc1ccc2noc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1cc2ccccc2[nH]1C
+❌ Invalid SMILES detected: Cc1ccc2sc(c3ccccc3)c2c1
+❌ Invalid SMILES detected: Cc1ccc2scccc2c1
+❌ Invalid SMILES detected: Cc1ccc2occcc2c1
+❌ Invalid SMILES detected: Cc1ccc2oc(c3ccccc3)c2c1
+🔹 Filtering and evaluating new SMILES...
+❌ Cc1ccccc1CCc1cccs1 failed H₂ weight requirement.
+✅ Cc1ccnc2ccccc12 passed all filters. ΔH: 48.455513426600035, MP: -10.833°C
+❌ Cc1ccncc1COCc1ccccc1 failed H₂ weight requirement.
+❌ Cc1cccc2c1-c1ccccc1C=CO2 failed RF ΔH prediction (got 71.03032469619995).
+❌ Cc1ccccc1CCc1ccco1 failed H₂ weight requirement.
+❌ Cc1ccccc1CCc1ccncc1O failed H₂ weight requirement.
+✅ Cc1nccc2ccccc12 passed all filters. ΔH: 47.66392955270005, MP: 21.947°C
+❌ Cc1ccc2c(c1)C(c1ccccc1)=N2 failed melting point filter (MP = 111.193°C).
+❌ Cc1ccccc1CCc1ccoc1N failed H₂ weight requirement.
+❌ Cc1ccccc1COCc1cccs1 failed H₂ weight requirement.
+❌ Cc1ccccc1COCc1ccccc1N failed H₂ weight requirement.
+❌ Cc1ccc2ccncc2c1C failed RF ΔH prediction (got 80.0133311714).
+❌ Cc1ccncc1COCc1ccncc1 failed H₂ weight requirement.
+✅ Cc1cnccc1CCc1ccccc1 passed all filters. ΔH: 51.27388046870001, MP: 21.655°C
+❌ Cc1ccccc1COCc1cccnc1 failed H₂ weight requirement.
+❌ Cc1ccncc1COCc1ccoc1 failed H₂ weight requirement.
+❌ Cc1ccccc1COCc1ccoc1 failed H₂ weight requirement.
+❌ Cc1ccccc1OCc1cccnc1 failed melting point filter (MP = 63.476°C).
+⏳ Filtering & evaluation time: 79.19 seconds.
+🔹 3 molecules passed filtering. 15 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 11, 'ΔH out of range': 2, 'High melting point': 2, 'Duplicate': 0}
+⏳ Iteration 5 completed in 130.79 seconds.
+
+🔹 Iteration 6/10 - Current set size: 18.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 45.09 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1cc2occc2c1C
+❌ Invalid SMILES detected: Cc1cc2ncncc2c1
+❌ Invalid SMILES detected: Cc1cc2nnccc2c1
+❌ Invalid SMILES detected: Cc1ccc2nccco2c1
+❌ Invalid SMILES detected: Cc1ccc2scccn2c1
+❌ Invalid SMILES detected: Cc1ccnc2ccncc2c1
+❌ Invalid SMILES detected: Cc1ccc2occcn2c1
+❌ Invalid SMILES detected: Cc1ccc2ncscc2c1
+❌ Invalid SMILES detected: Cc1cc2ocnc2c1C
+❌ Invalid SMILES detected: Cc1cc2ncccc2c1C
+❌ Invalid SMILES detected: Cc1ccc2nc(C)cc2c1
+❌ Invalid SMILES detected: Cc1ccc2ccocn2c1
+❌ Invalid SMILES detected: Cc1ncc2occcc2c1
+🔹 Filtering and evaluating new SMILES...
+❌ CC1=CC2=Nc3ccccc3C2=N1 failed melting point filter (MP = 106.372°C).
+❌ Cc1ccc2ncnn2c1 failed RF ΔH prediction (got 29.105137782299984).
+❌ Cc1cc2nccnc2o1 failed melting point filter (MP = 54.012°C).
+❌ Cc1ccc2nc(C)oc2c1 failed H₂ weight requirement.
+❌ Cc1cc2nccsc-2c1 failed H₂ weight requirement.
+✅ Cc1cc2nc(C)cc3ccccc3c-2c1 passed all filters. ΔH: 44.77476852939999, MP: 19.415°C
+❌ Cc1ccc2ncsc2c1 failed H₂ weight requirement.
+✅ Cc1cc2ncccc2o1 passed all filters. ΔH: 51.007331394600044, MP: 27.38°C
+❌ Cc1ccc2ncc(C)n2c1 failed H₂ weight requirement.
+❌ Cc1cc2occ(C)n2c1 failed H₂ weight requirement.
+❌ Cc1ncc2ccccc2n1 failed melting point filter (MP = 114.436°C).
+❌ Cc1ccc2nccnc2c1 failed melting point filter (MP = 214.505°C).
+❌ CC1=CC=C2C=CC=NS2=C1 failed melting point filter (MP = 45.048°C).
+❌ Cc1ccc2c(c1)=CC(=O)N=2 failed RF ΔH prediction (got 74.9738502001).
+❌ Cc1nccc2ncccc12 failed melting point filter (MP = 63.269°C).
+❌ Cc1cc2cccsc-2c1 failed H₂ weight requirement.
+⏳ Filtering & evaluation time: 75.35 seconds.
+🔹 2 molecules passed filtering. 14 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 6, 'ΔH out of range': 2, 'High melting point': 6, 'Duplicate': 0}
+⏳ Iteration 6 completed in 120.50 seconds.
+
+🔹 Iteration 7/10 - Current set size: 20.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 57.36 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1ccc2oc3ccccc3nc2c1
+❌ Invalid SMILES detected: Cc1ccc2ncc3ccccc3c2o1
+❌ Invalid SMILES detected: Cc1cc2ncnc3c2ccn3c1
+❌ Invalid SMILES detected: Cc1cc2ncncc2c1
+❌ Invalid SMILES detected: Cc1ccc2nc3ncccc3c2c1
+❌ Invalid SMILES detected: Cc1cc2ccc3ncccc3c2n1
+❌ Invalid SMILES detected: Cc1ccc2nc(C)nc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2occcn2c1
+❌ Invalid SMILES detected: Cc1cc2nccc3occcc3c2c1
+❌ Invalid SMILES detected: Cc1cc2nc(C)ccc2n1
+❌ Invalid SMILES detected: Cc1cc2ncc(C)n2c1
+❌ Invalid SMILES detected: Cc1cccc2nc3ccccc3nc2c1
+❌ Invalid SMILES detected: Cc1ccc2nccc3ncccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2ncc3ccco3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nc(=O)ccc2c1
+❌ Invalid SMILES detected: Cc1cc2ocnc3ccccc3c2c1
+🔹 Filtering and evaluating new SMILES...
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for Cc1ccc2nc(C)c(C)cc2c1: 
+❌ Cc1ccc2nc(C)c(C)cc2c1 failed melting point filter (MP = 9999°C).
+❌ Cc1cc2nccc(C)c2o1 failed H₂ weight requirement.
+❌ Cc1ccc2nc3ccccc3nc2c1 failed melting point filter (MP = 176.503°C).
+❌ Cc1cc2nccnc2o1 failed melting point filter (MP = 54.012°C).
+❌ Cc1cc2nccc3ccccc3c-2n1 failed melting point filter (MP = 48.182°C).
+✅ Cc1cc2nccc3ccncc3c-2c1 passed all filters. ΔH: 42.630442164199984, MP: 39.228°C
+❌ Cc1cc2ncnc3ccccc3c-2c1 failed melting point filter (MP = 66.747°C).
+❌ Cc1ccc2ncc(C)nc2c1 failed melting point filter (MP = 124.086°C).
+❌ Cc1ccc2nccnc2c1 failed melting point filter (MP = 214.505°C).
+❌ CC1=C(C)C=C2Oc3ccccc3N=C2C=C1 failed RF ΔH prediction (got 71.4978361044).
+❌ CCc1ccc2ocnc2c1 failed H₂ weight requirement.
+❌ CC1=Cc2ccccc2-c2nc(C)ccc2N=C1 failed melting point filter (MP = 76.75°C).
+❌ Cc1cc(Cc2ccccc2C)ccn1 failed melting point filter (MP = 41.639°C).
+⏳ Filtering & evaluation time: 91.37 seconds.
+🔹 1 molecules passed filtering. 12 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 2, 'ΔH out of range': 1, 'High melting point': 9, 'Duplicate': 0}
+⏳ Iteration 7 completed in 148.80 seconds.
+
+🔹 Iteration 8/10 - Current set size: 21.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 71.24 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1csc2ccccc2c1C
+❌ Invalid SMILES detected: Cc1coc2ccccc2c1C
+❌ Invalid SMILES detected: Cc1ccc2nc3ccncc3o2c1
+❌ Invalid SMILES detected: Cc1ccc2nc(=O)ccc2c1C
+❌ Invalid SMILES detected: Cc1csc2ncccc2c1C
+❌ Invalid SMILES detected: Cc1cc2nc(C)ccc3ccccc3c2c1N
+❌ Invalid SMILES detected: Cc1ccc2nccc3c2ccccc3c1C
+❌ Invalid SMILES detected: Cc1ccc2nc3ncccc3c2c1C
+❌ Invalid SMILES detected: Cc1ccc2nccc3cccnc3c2c1
+❌ Invalid SMILES detected: Cc1cc2oc3ncccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2sccn2c1
+❌ Invalid SMILES detected: Cc1ccc2ncc(=O)cc2c1
+🔹 Filtering and evaluating new SMILES...
+❌ Cc1ccc2sc3ccccc3c2c1 failed melting point filter (MP = 48.755°C).
+❌ Cc1ccc2oc3ccncc3c2c1 failed melting point filter (MP = 66.263°C).
+❌ Cc1cc2ncoc2cc1C failed H₂ weight requirement.
+✅ Cc1ncccc1Cc1ccccc1 passed all filters. ΔH: 53.153222557500015, MP: 19.756°C
+❌ Cc1cnc2ccccc2c1C failed melting point filter (MP = 55.836°C).
+❌ CC1=CNC2=CC=Nc3ccccc3C2=C1 failed melting point filter (MP = 186.484°C).
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+ERROR: Accessing API failed. This is our fault, not yours. Please accept our apologies. We have been notified of this error.
+Error fetching melting point for Cc1ccc2[nH]c3ccccc3c2c1: 
+❌ Cc1ccc2[nH]c3ccccc3c2c1 failed melting point filter (MP = 9999°C).
+❌ Cc1ccc2sc3ccncc3c2c1 failed melting point filter (MP = 104.917°C).
+❌ Cc1ccc2nccnc2c1 failed melting point filter (MP = 214.505°C).
+❌ Cc1ccc2ncsc2c1 failed H₂ weight requirement.
+❌ Cc1cc2ncccc2c(=O)o1 failed melting point filter (MP = 131.712°C).
+❌ Cc1ccc2ncc3ccncc3c2c1C failed RF ΔH prediction (got 78.9885460113).
+❌ Cc1cc2ncnc3ccccc3c-2c1 failed melting point filter (MP = 66.747°C).
+❌ CC1=Cc2cccc3ncnc(c23)C=C1 failed melting point filter (MP = 128.166°C).
+❌ Cc1cc2ncnc3ccccc3c-2c1C failed melting point filter (MP = 48.149°C).
+❌ Cc1ccc2c(c1C)-c1ccccc1N=CO2 failed RF ΔH prediction (got 78.77222362689997).
+❌ Cc1cc2ncc(=N)cc3ccccc3c-2c1 failed melting point filter (MP = 96.635°C).
+✅ Cc1cc2nccc3ncccc3c-2c1 passed all filters. ΔH: 44.019995040000005, MP: 39.23°C
+⏳ Filtering & evaluation time: 105.86 seconds.
+🔹 2 molecules passed filtering. 16 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 2, 'ΔH out of range': 2, 'High melting point': 12, 'Duplicate': 0}
+⏳ Iteration 8 completed in 177.16 seconds.
+
+🔹 Iteration 9/10 - Current set size: 23.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 54.18 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1cc2occc3ccccc3c2c1F
+❌ Invalid SMILES detected: Cc1ccc2nc(C)cc3ccncc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2ncnc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nccc3ccsc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nc3ccncc3c2c1F
+❌ Invalid SMILES detected: Cc1nccc2ccccc2c1C
+❌ Invalid SMILES detected: Cc1ccc2nc3ccccc3c2c1Br
+❌ Invalid SMILES detected: Cc1ccc2nc3ccccc3c2c1C
+❌ Invalid SMILES detected: Cc1cc2nccc3ccccc3c2cc1C
+❌ Invalid SMILES detected: Cc1ccc2nc3cc(Cl)ccc3c2c1
+❌ Invalid SMILES detected: Cc1cc2nccc3ccocc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nccc3c4ccccc4c2c1c3
+❌ Invalid SMILES detected: COc1ccc2nccc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1cc2ocnc3ccccc3c2c1C
+❌ Invalid SMILES detected: Cc1cnc2nccc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nccc3ccc(C)cc3c2c1
+❌ Invalid SMILES detected: Cc1cc2nc3ccccc3c2cc1O
+❌ Invalid SMILES detected: Cc1ccc2nc3ccc(C)cc3c2c1Br
+🔹 Filtering and evaluating new SMILES...
+❌ Cc1ccc2sc3ccccc3c2c1 failed melting point filter (MP = 48.755°C).
+❌ Cc1ccccc1Cc1ccncc1C failed melting point filter (MP = 41.624°C).
+❌ Cc1ccccc1Cc1cnccc1C failed melting point filter (MP = 41.605°C).
+❌ Cc1cc2nccc3ccc4ccccc4c3c-2c1 failed melting point filter (MP = 84.75°C).
+✅ Cc1cc2nccc3ccccc3c-2c1Cl passed all filters. ΔH: 54.22580625900002, MP: 24.817°C
+✅ CC1=CC=CC2=NC=Cc3ccccc3C2=C1 passed all filters. ΔH: 56.28388451119999, MP: 11.082°C
+❌ Cc1ccc2c(c1N)C1=CC=CC1=N2 failed RF ΔH prediction (got 70.36997862829998).
+❌ Cc1ccc2c(c1)-c1ccccc1C=CO2 failed RF ΔH prediction (got 70.68403568619996).
+❌ Cc1ccc2c(c1)-c1ccccc1N=CS2 failed melting point filter (MP = 67.068°C).
+❌ CC1=Cc2ccccc2-c2cc(C)ccc2N=C1 failed melting point filter (MP = 85.655°C).
+❌ CC1=CC2=c3cc(C)ccc3=NC=CN2C=C1 failed melting point filter (MP = 91.476°C).
+❌ Cc1cc2nccc3nc(C)ccc3c-2c1 failed melting point filter (MP = 48.06°C).
+⏳ Filtering & evaluation time: 69.91 seconds.
+🔹 2 molecules passed filtering. 10 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 0, 'ΔH out of range': 2, 'High melting point': 8, 'Duplicate': 0}
+⏳ Iteration 9 completed in 124.16 seconds.
+
+🔹 Iteration 10/10 - Current set size: 25.
+🔹 Attempt 1/10 to generate new SMILES...
+⏳ LLM generation time: 45.96 seconds.
+✅ Received 30 SMILES from LLM. 30 were unique.
+❌ Invalid SMILES detected: Cc1cc2nc(C)ccc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2oc3ccccc3cc2c1
+❌ Invalid SMILES detected: Cc1cccc2nc3ccccc3cc2c1
+❌ Invalid SMILES detected: Cc1ccc2nccc3ccccc3c2c1N
+❌ Invalid SMILES detected: Cc1nccc2ccccc2c1CCc1ccoc1
+❌ Invalid SMILES detected: Cc1cc2nc3ccccc3c(C)c2c1
+❌ Invalid SMILES detected: Cc1cc2ncccc2c1CCl
+❌ Invalid SMILES detected: Cc1ccc2nccc3ccccc3c2c1F
+❌ Invalid SMILES detected: Cc1ccc2ocnc3cccc3c2c1
+❌ Invalid SMILES detected: Cc1ccc2nccc3ccccc3c2c1C(F)(F)F
+❌ Invalid SMILES detected: Cc1ccc2nc(C)cc3ccccc3c2c1
+❌ Invalid SMILES detected: Cc1cc2ncccc2c1CCc1cccnc1
+❌ Invalid SMILES detected: Cc1ccc2nccc3ccncc3c2c1C
+❌ Invalid SMILES detected: Cc1cc2nccc3ccscc3c2c1
+❌ Invalid SMILES detected: Cc1cc2nc3cccc3cc2c(n1)C
+🔹 Filtering and evaluating new SMILES...
+❌ Cc1ccc2nc3ccncc3cc2c1 failed melting point filter (MP = 170.894°C).
+✅ Cc1ccc2c(c1C)-c1ccccc1C=CS2 passed all filters. ΔH: 69.78262714759995, MP: 32.194°C
+❌ Cc1ccc2nc3ccccc3cc2c1 failed melting point filter (MP = 89.727°C).
+❌ Cc1ccc2cnc3ccc(C)cc3c2c1 failed melting point filter (MP = 89.565°C).
+❌ Cc1ccc2c(c1)-c1ccccc1C=CS2 failed melting point filter (MP = 68.115°C).
+❌ Cc1ccc2nc3ccccc3cc2c1Br failed H₂ weight requirement.
+❌ Cc1ccc2nc3ccccc3nc2c1 failed melting point filter (MP = 176.503°C).
+❌ Cc1c[nH]c2ccccc12 failed melting point filter (MP = 97.062°C).
+❌ Cc1cc2oc3ccccc3c(C)c-2c1 failed RF ΔH prediction (got 70.31032639519995).
+❌ Cc1cc2nccc3ccncc3c-2c1Cl failed melting point filter (MP = 78.346°C).
+❌ Cc1ncccc1Cc1ccoc1C failed H₂ weight requirement.
+❌ Cc1ccc2c(c1)N1C=CC=CC1=CC=N2 failed melting point filter (MP = 70.433°C).
+❌ Cc1ccc2c(c1O)C1=CC=CC1=N2 failed RF ΔH prediction (got 78.95520128509999).
+❌ Cc1ccc2oc3cccc-3cc2c1C failed RF ΔH prediction (got 72.6429186116).
+❌ Cc1ccc2nc3ccccc3cc2c1Cl failed RF ΔH prediction (got 78.51596169949998).
+⏳ Filtering & evaluation time: 67.93 seconds.
+🔹 1 molecules passed filtering. 14 molecules were rejected.
+❌ Rejection breakdown: {'Invalid structure': 0, 'H2 % too low': 2, 'ΔH out of range': 4, 'High melting point': 8, 'Duplicate': 0}
+⏳ Iteration 10 completed in 113.97 seconds.
+✅ Final dataset contains 26 unique LOHC molecules.
+Execution time: 0:26:34
+✅ SMILES exported successfully to 'Argo_LOHC_generated_dry_run_withMP_more_attempts_second_try_expt.csv'

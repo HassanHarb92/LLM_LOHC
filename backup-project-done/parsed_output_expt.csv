@@ -1,0 +1,11 @@
+Iteration,LLM Generation Time (s),Filtering & Evaluation Time (s),Total Iteration Time (s),SMILES Received,SMILES Unique,Molecules Passed,Molecules Rejected,Invalid structure,H2 % too low,ΔH out of range,High melting point,Duplicate,SMILES Unique (Recalculated),Total Rejected (Calculated),Matches Molecules Rejected
+1,68.29,30.25,98.58,30,29,2,19,0,4,4,8,3,21,19,Yes
+2,53.96,16.28,70.26,30,30,4,22,0,17,0,3,2,26,22,Yes
+3,66.53,25.48,92.06,30,30,3,20,0,9,1,4,6,23,20,Yes
+4,46.52,26.78,73.31,26,25,3,22,0,15,2,5,0,25,22,Yes
+5,120.91,24.67,145.58,25,25,2,23,0,19,0,3,1,25,23,Yes
+6,51.17,59.65,110.83,26,25,5,20,0,8,3,7,2,25,20,Yes
+7,78.4,26.83,105.24,30,30,7,22,0,13,4,2,3,29,22,Yes
+8,55.14,29.28,84.42,26,26,3,23,0,11,2,8,2,26,23,Yes
+9,87.66,30.56,118.23,27,27,4,23,0,10,2,8,3,27,23,Yes
+10,113.05,39.44,152.5,28,28,0,28,0,14,1,11,2,28,28,Yes
